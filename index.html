@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>module 05</title>
+  <title>module 06</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -410,6 +410,17 @@
           </li>
         </ul>
       </div>
+      <div class="footer-container-end">
+        <h2 class="footer-container-end-text">Подпишитесь на рассылку</h2>
+        <form class="form-footer">
+          <input class="form-input-footer" type="email" id="user-email" placeholder="E-mail" />
+          <button class="button-footer" type="submit-footer">Подписаться
+            <svg class="modal-button-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
   <!-- modal window -->
@@ -420,6 +431,46 @@
           <use href="./images/icons.svg#Vector"></use>
         </svg>
       </button>
+      <form class="form">
+        <strong class="form-title">Оставьте свои данные, мы вам перезвоним</strong>
+        <div class="form-box" role="group">
+          <label class="form-group">
+            <span class="form-lable" for="user-name">Имя</span>
+            <input class="form-input" type="text" id="user-name" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#man"></use>
+            </svg>
+          </label>
+          <label class="form-group">
+            <span class="form-lable" for="user-phone">Телефон</span>
+            <input class="form-input" type="tel" id="user-phone" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#tel"></use>
+            </svg>
+          </label>
+          <label class="form-group">
+            <span class="form-lable" for="user-email">Почта</span>
+            <input class="form-input" type="email" id="user-email" />
+            <svg class="form-icon" width="18" height="18">
+              <use href="./images/icons.svg#envelope"></use>
+            </svg>
+          </label>
+          <label class="form-group">
+            <span class="form-lable" for="user-comments">Комментарий</span>
+            <textarea class="form-input-textarea" name=" " rows="5" placeholder="Введите текст"></textarea>
+          </label>
+        </div>
+        <label class="form-agreement">
+          <input class="form-checkbox visually-hidden" type="checkbox" name="agreement">
+          <svg class="form-icon-check" width="16" height="15">
+            <use class="form-agreement-icon-square" href="./images/icons.svg#square"></use>
+            <use class="form-agreement-icon-check" href="./images/icons.svg#icon-check-fin"></use>
+          </svg>
+          <span class="form-agreement-text">Соглашаюсь с рассылкой и принимаю <a class="form-agreement-link"
+              href="">Условия договора</a> </span>
+        </label>
+        <button class="form-button" type="submit">Отправить</button>
+      </form>
     </div>
   </div>
   <script src="./js/modal.js"></script>
