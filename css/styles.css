@@ -510,6 +510,7 @@ p {
   cursor: pointer;
   transition-property: box-shadow;
   transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-footer:hover,
@@ -766,13 +767,14 @@ p {
 .modal {
   position: absolute;
   width: 528px;
-  height: auto;
+  height: 581px;
   padding: 40px;
   background-color: var(--background-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
+
 .modal-button {
   position: absolute;
   top: 8px;
@@ -787,6 +789,14 @@ p {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-button:hover,
+.modal-button:focus {
+  fill: var(--accent-color);
 }
 
 .form {
@@ -831,6 +841,9 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   outline: transparent;
+  transition-property: border-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input-textarea:hover,
@@ -849,6 +862,9 @@ p {
   bottom: 11px;
   left: 12px;
   cursor: pointer;
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-input:hover + .form-icon,
@@ -911,6 +927,9 @@ p {
   border-radius: 4px;
   border: none;
   cursor: pointer;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-button:hover,
